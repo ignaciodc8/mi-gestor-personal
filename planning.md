@@ -44,3 +44,9 @@
 - Un usuario tiene muchas tareas
 - Una tarea pertenece a un usuario
 
+## Decisiones tomadas:
+- [x] Funciones del MVP: CRUD de tareas, autenticación
+- [x] Pantallas: Login/Registro, Dashboard, Formulario tareas  
+- [x] Base de datos: MongoDB con usuarios y tareas
+- [x] Tecnologías: Node.js, Express, MongoDB, JWT, React
+
