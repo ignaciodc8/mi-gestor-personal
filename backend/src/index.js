@@ -2,6 +2,7 @@ import express from "express"
 import connectDB from "./config/database.js";
 import dotenv from "dotenv"
 import cors from "cors";
+import authRoutes from './routes/auth.routes.js';
 
 const app = express();
 app.use(express.json());
@@ -10,7 +11,12 @@ app.use(cors());
 dotenv.config();
 
 const PORT = process.env.PORT || 7000;
-const MONGODBURI = process.env.MONGODB_URI
+
+app.get("/", (req, res) => {
+    res.json({message: "API funcionando."})
+});
+
+app.use('/api/auth', authRoutes);
 
 const startServer = async () => {
     try {
@@ -22,10 +28,6 @@ const startServer = async () => {
         console.error(error);
     }
 }
-
-app.get("/", (req, res) => {
-    res.json({message: "API funcionando."})
-});
 
 startServer();
 
