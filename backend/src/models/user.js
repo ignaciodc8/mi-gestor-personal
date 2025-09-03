@@ -20,7 +20,7 @@ const userSchema = new mongoose.Schema({
     },
     createdAt: {
         type: Date, 
-        default: Date.now // Se establece automáticamente al crear
+        default: Date.now // Se establece automáticamente al crear.
     }
 });
 
