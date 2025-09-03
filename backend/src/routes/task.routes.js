@@ -8,6 +8,7 @@ import {
     deleteTask
 } from "../controllers/task.controller.js";
 
+// Crear un router de Express
 const router = express.Router();
 
 router.use(protect);
@@ -21,4 +22,4 @@ router.route('/:id')
     .put(updateTask)
     .delete(deleteTask);
 
-    export default router;
+export default router;

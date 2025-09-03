@@ -3,17 +3,22 @@
 ## 1. Funcionalidades MVP
 ### Usuario puede:
 - [x] Registrarse con email y contraseña
-- [ ] Iniciar sesión
-- [ ] Cerrar sesión
-- [ ] Ver su perfil
+- [x] Iniciar sesión
+- [x] Cerrar sesión
+- [x] Ver su perfil
 
 ### Tareas:
-- [ ] Crear una tarea nueva
-- [ ] Ver lista de todas sus tareas
-- [ ] Marcar tarea como completada/pendiente
-- [ ] Editar una tarea
-- [ ] Eliminar una tarea
-- [ ] Filtrar tareas (todas/completadas/pendientes)
+- [x] Crear una tarea nueva
+- [x] Ver lista de todas sus tareas
+- [x] Marcar tarea como completada/pendiente
+- [x] Editar una tarea
+- [x] Eliminar una tarea
+- [x] Filtrar tareas (todas/completadas/pendientes)
+
+### Extras implementados:
+- [x] Búsqueda por título
+- [x] Ordenamiento personalizable
+- [x] Filtros por fecha
 
 ## 2. Funcionalidades para después:
 - [ ] Notas
@@ -61,13 +66,6 @@
   - Tokens con expiración de 30 días
 
 ### 🚧 En progreso:
-- Middleware de autenticación para proteger rutas
-- Modelo de Task
-- CRUD de tareas
+
 
 ### 📝 Próximos pasos técnicos:
-1. Crear middleware que verifique el JWT en las rutas protegidas
-2. Implementar el modelo Task con Mongoose
-3. Crear controladores para el CRUD de tareas
-4. Crear rutas para las tareas
-5. Probar todo con Thunder Client antes de pasar al frontend
