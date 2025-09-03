@@ -13,9 +13,10 @@ import taskRoutes from "./routes/task.routes.js";
 const app = express();
 
 // Middlewares globales
+app.use(cors()); // Permite peticiones desde otros dominios (importante para el frontend)
 app.use(express.json()); // Permite recibir JSON en el body de las peticiones
 app.use(express.urlencoded({ extended: true })); // Permite recibir datos de formularios
-app.use(cors()); // Permite peticiones desde otros dominios (importante para el frontend)
+
 
 dotenv.config(); // Cargar variables de entorno desde .env
 
