@@ -7,6 +7,8 @@ const api = axios.create({
         'Content-Type': 'application/json'
     }
 });
+console.log('API URL:', process.env.REACT_APP_API_URL);
+console.log('Using baseURL:', api.defaults.baseURL);
 
 // Interceptor para agregar el token a cada petición
 api.interceptors.request.use(
