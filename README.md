@@ -4,7 +4,7 @@
 Una aplicación web para gestionar tareas diarias, notas y recordatorios de manera eficiente.
 
 ## Estado del Proyecto
-🚧 **En desarrollo** - Iniciado el [1/9/2025]
+🚧 **FINALIZADO [4/9/2025]** - Iniciado el [24/8/2025]
 
 ## Características
 
