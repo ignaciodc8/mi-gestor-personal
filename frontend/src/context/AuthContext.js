@@ -48,7 +48,7 @@ useEffect(() => {
 const login = async (email, password) => {
     try {
         setError('');
-        const response = await api.post('auth/login', {email, password});
+        const response = await api.post('/auth/login', {email, password});
         const {token, user} = response.data;
 
         localStorage.setItem('token', token);
@@ -68,7 +68,7 @@ const login = async (email, password) => {
 const register = async (name, email, password) => {
     try {
         setError('');
-        const response = await api.post('auth/register', {name, email, password});
+        const response = await api.post('/auth/register', {name, email, password});
         console.log('Usuario creado: ', response.data);
         return {success: true, message: 'Usuario registrado exitosamente'};
     } catch (error) {
